@@ -1,0 +1,133 @@
+main > .container
+{
+ padding-top: 20px
+}
+.flex-shrink-0
+{
+
+}
+
+.user-bar-box
+{
+ display: flex;
+  padding-left: 30px;
+}
+
+.log-out
+{
+  padding-left: 10px;
+}
+
+.question
+{
+  border: 1px solid gray;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.question-image
+{
+  max-width: 120px;
+  max-height: 120px;
+}
+
+.question-text{
+
+}
+.question-title{
+  font-size: 40px;
+  color: blue;
+  text-decoration: blue underline ;
+  font-family: "Microsoft Himalaya";
+  font-weight: bold;
+}
+
+.tags-two-points
+{
+
+}
+
+.black-jack
+{
+padding-left: 10px;
+}
+
+.bender
+{
+padding-left: 10px;
+}
+
+
+.tags
+{
+  max-width: 200px;
+}
+.user-avatar-image
+{
+  max-width: 70px;
+  max-height: 70px;
+  padding-right: 10px ;
+}
+
+.navbar-brand
+{
+  font-size: 40px;
+}
+
+.plus-image {
+    max-width: 15px;
+  max-height: 15px;
+}
+
+.minus-image {
+    max-width: 15px;
+  max-height: 15px;
+}
+
+.row-header
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.hot-questions
+{
+    padding-left: 40px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.like-counter
+{
+     padding-top: 20px;
+    padding-left: 0px;
+    display: flex;
+    position:relative;
+padding-bottom:50px;
+}
+
+.vote-buttons
+{
+    padding-top: 20px;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+.input-group
+{
+    height: 50px;
+    padding-top: 20px;
+    padding-left: 24px;
+}
+.input-group-text
+{
+font-size: 30px;
+
+}
+
+.pagonator
+{
+    margin-top: 30px;
+}
+
+

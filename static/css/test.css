@@ -1,0 +1,23 @@
+.scheme-item {
+	position: absolute;
+	cursor: pointer;
+}
+.scheme-name {
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	line-height: 13px;
+}
+.scheme-popup {
+	display: none;
+	border: 1px solid #777;
+	padding: 10px;
+	width: 200px;
+	position: absolute;
+	font-size: 12px;
+	line-height: 14px;
+	background: #fff;
+	z-index: 9999;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	text-align: left;
+}
