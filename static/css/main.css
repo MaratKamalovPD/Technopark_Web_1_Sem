@@ -130,4 +130,8 @@ font-size: 30px;
     margin-top: 30px;
 }
 
+.wrong-pass
+{
+   color: red;
+}
 

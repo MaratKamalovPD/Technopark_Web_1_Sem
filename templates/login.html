@@ -23,33 +23,37 @@
   </head>
 <body>
 
-<h1>New Question</h1>
+<h1>Log In</h1>
+ <div class="wrong-pass">Sorry, wrong password!</div>
   <div class="mb-3 row">
-    <label  class="col-sm-2 col-form-label">Title</label>
+    <label  class="col-sm-2 col-form-label">Login</label>
     <div class="col-sm-10">
-      <input  class="form-control" maxlength="20" width="10" placeholder="How to build a moon par ?">
+      <input  class="form-control" maxlength="20" placeholder="Enter your login here">
     </div>
   </div>
   <div class="mb-3 row">
-    <label class="col-sm-2 col-form-label">Text</label>
+    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
     <div class="col-sm-10">
-      <textarea class="form-control" rows="10" maxlength="500" placeholder="Really how? Have no idea about it"></textarea>
-    </div>
-  </div>
-  <div class="mb-3 row">
-    <label  class="col-sm-2 col-form-label">Tags</label>
-    <div class="col-sm-10">
-      <input  class="form-control" placeholder="moon, park, puzzle">
+      <input type="password" class="form-control" id="inputPassword">
     </div>
   </div>
   <div class="mb-3 row">
     <label  class="col-sm-2 col-form-label"></label>
     <div class="col-sm-10">
       <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">ASK!</button>
+    <button type="submit" class="btn btn-primary mb-3">Log in!</button>
   </div>
     </div>
   </div>
+<div class="mb-3 row">
+    <label  class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10">
+      <div class="col-auto">
+    <div class="create-new-account"><a href="">create new account</a></div>
+  </div>
+    </div>
+  </div>
+
 
 <script src="../static/js/bootstrap.js" ></script>
 </body>
