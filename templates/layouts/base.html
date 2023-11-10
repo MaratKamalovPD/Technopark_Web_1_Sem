@@ -1,8 +1,8 @@
-
+{% load static %}
 <!doctype html>
 <html lang="en" class="h-100">
   <head>
-   <link href="../static/css/bootstrap.css" rel="stylesheet">
+   <link href="{% static '/css/bootstrap.css' %}" rel="stylesheet">
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -20,7 +20,7 @@
     </style>
 
     <!-- Custom styles for this template -->
-    <link href="../static/css/main.css" rel="stylesheet">
+    <link href="{% static '/css/main.css' %}" rel="stylesheet">
   </head>
   <body class="d-flex flex-column h-100">
 
@@ -31,7 +31,7 @@
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
           <div class="col-4">
-                <a class="navbar-brand" href="#">AskPupkin</a>
+                <a class="navbar-brand" href="{% url 'index' %}">AskPupkin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -43,12 +43,7 @@
                 </form>
           </div>
           <div class="col-4">
-              <div class="user-bar-box">
-                 <div>  <img src="../static/img/cat.jpg" class="user-avatar-image"> </div>
-                  <div>Dr. Pepper
-                      <div> <a href="" >settings</a>  <a href="" class="log-out">log out</a></div>
-                 </div>
-             </div>
+              {% include 'components/auth-box.html' %}
           </div>
       </div>
     </div>
@@ -59,7 +54,13 @@
 <main class="flex-shrink-0">
   <div class="container">
     <div class="row">
-      <div class="col-8"> </div>
+      <div class="col-8">
+          {% block content %}
+
+          Empty block
+
+          {% endblock %}
+      </div>
       <div class="col-4">
         <h2> Popular Tags</h2>
           <span class="badge bg-dark">perl</span>
@@ -93,7 +94,7 @@
 </footer>
 
 
-    <script src="../static/js/bootstrap.js" ></script>
+    <script src="{% static '/js/bootstrap.js' %}" ></script>
 
 
   </body>

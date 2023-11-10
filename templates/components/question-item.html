@@ -1,0 +1,46 @@
+{% load static %}
+<div class="row question">
+          <div class="col-2">
+              <img src="{% static '/img/cat.jpg' %}" class="question-image">
+               <div class="like-counter">
+                   <div class="col-7">
+                       <div class="rating-display">
+                           <div class="input-group mb-3">
+                          <span class="input-group-text" id="basic-addon1">5</span>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-5">
+                       <div class="vote-buttons ">
+                        <button id="goodVoteButton" >
+                            <svg class="icn icn_like" width="1px" height="1px">
+                                <img src="{% static '/img/plus.png' %}" class="plus-image">
+                            </svg>
+                        </button>
+                        <button id="badVoteButton">
+                            <svg class="icn icn_dislike" width="1px" height="1px">
+                                <img src="{% static '/img/minus.png' %}" class="minus-image">
+                            </svg>
+
+                        </button>
+                    </div>
+                   </div>
+               </div>
+          </div>
+
+          <div class="col-10">
+              <div class="question-title"><a href="{% url 'question' question.id %}">{{ question.title }}</a></div>
+
+              <div class="question-text">{{ question.text }}</div>
+
+              <div class="row underquestion">
+                  <div class="col-5">
+                    <div class="answer"><a href="">answer (3)</a></div>
+              </div>
+              <div class="col-7">
+                     <div class="tags-two-points">Tags:<a href="" class="black-jack" >black-jack</a>  <a href="" class="bender">bender</a></div>
+              </div>
+              </div>
+
+          </div>
+        </div>
