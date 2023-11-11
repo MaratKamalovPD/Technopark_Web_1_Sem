@@ -28,18 +28,15 @@
                </div>
           </div>
 
-          <div class="col-10">
-              <div class="question-title"><a href="{% url 'question' question.id %}">{{ question.title }}</a></div>
-
-              <div class="question-text">{{ question.text }}</div>
-
-              <div class="row underquestion">
-                  <div class="col-5">
-                    <div class="answer"><a href="">answer (3)</a></div>
-              </div>
-              <div class="col-7">
-                     <div class="tags-two-points">Tags:<a href="" class="black-jack" >black-jack</a>  <a href="" class="bender">bender</a></div>
-              </div>
+          <div class="col-10" style="padding-left: 25px">
+              <div class="question-title-text-underquestion">
+                    <div class="question-text">{{ answer.text }}</div>
+                        <div class="form-check under-answer">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                                <label class="form-check-label" for="flexCheckIndeterminate">
+                                Correct!
+                                </label>
+                         </div>
               </div>
 
           </div>

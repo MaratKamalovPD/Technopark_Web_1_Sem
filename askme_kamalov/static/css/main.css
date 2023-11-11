@@ -54,7 +54,7 @@ padding-left: 10px;
 
 .bender
 {
-padding-left: 10px;
+padding-left: 15px;
 }
 
 
@@ -138,4 +138,16 @@ font-size: 30px;
 {
     padding-left: 30px;
 }
+.underquestion
+{
+    padding-top: 25px;
+}
 
+.under-answer{
+    padding-top: 25px;
+}
+
+.question-title-text-underquestion
+{
+    padding-left: 20px;
+}

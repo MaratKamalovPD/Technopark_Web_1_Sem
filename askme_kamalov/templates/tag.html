@@ -1,7 +1,8 @@
 {% extends 'layouts/base.html' %}
 {% load static %}
 {% block content %}
-
-{% include 'components/question-item.html' %}
+<div class="row-header">
+        <h1>Tag: {{tag.name}}</h1>
+    </div>
 
 {% endblock %}

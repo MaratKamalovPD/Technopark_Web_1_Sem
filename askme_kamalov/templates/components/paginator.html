@@ -1,0 +1,13 @@
+{% load static %}
+
+<nav aria-label="...">
+        <ul class="pagination pagonator pagination-lg">
+
+                {% for page in pages %}
+                <li class="page-item " >
+                <a class="page-link" href="{% url html_template %}?{% if question%}id={{question.id}}&{% endif %}page={{page}}" > {{page}} </a>
+                </li>
+                {% endfor %}
+
+       </ul>
+    </nav>
