@@ -1,27 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-   <link href="../static/css/bootstrap.css" rel="stylesheet">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-
-    <!-- Custom styles for this template -->
-    <link href="../static/css/main.css" rel="stylesheet">
-  </head>
-<body>
+<{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
 
 <h1>Log In</h1>
  <div class="wrong-pass">Sorry, wrong password!</div>
@@ -41,20 +20,20 @@
     <label  class="col-sm-2 col-form-label"></label>
     <div class="col-sm-10">
       <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Log in!</button>
-  </div>
+          <form class="d-flex" action="{% url 'index' %}?auth=yes">
+              <button type="submit"  class="btn btn-primary mb-3">Log in!</button>
+          </form>
+     </div>
     </div>
   </div>
 <div class="mb-3 row">
     <label  class="col-sm-2 col-form-label"></label>
     <div class="col-sm-10">
       <div class="col-auto">
-    <div class="create-new-account"><a href="">create new account</a></div>
+    <div class="create-new-account"><a href="{% url 'registration' %}">create new account</a></div>
   </div>
     </div>
   </div>
 
 
-<script src="../static/js/bootstrap.js" ></script>
-</body>
-</html>
+{% endblock %}

@@ -5,9 +5,9 @@
                <div class="like-counter">
                    <div class="col-7">
                        <div class="rating-display">
-                           <div class="input-group mb-3">
-                          <span class="input-group-text" id="basic-addon1">5</span>
-                           </div>
+
+                          <span class="input-group-text" id="basic-addon1"> <b class="like-display-field">{{question.likes_count}}</b></span>
+
                        </div>
                    </div>
                    <div class="col-5">
@@ -39,7 +39,11 @@
                             <div class="answer"><a href="">answer (3)</a></div>
                         </div>
                         <div class="col-7">
-                            <div class="tags-two-points">Tags:<a href="{% url 'question' %}?tag={{tag.tag}}" class="black-jack" >black-jack</a>  <a href="" class="bender">bender</a></div>
+                            <div class="tags-two-points">Tags:
+                            {% for tag in question.tags.all %}
+                            <a href="{% url 'tag' tag=tag.name %}" class="bender">{{tag.name}}</a>
+                            {% endfor %}
+                            </div>
                         </div>
                     </div>
               </div>

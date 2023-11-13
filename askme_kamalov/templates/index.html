@@ -5,8 +5,14 @@
   <body class="d-flex flex-column h-100">
 
     <div class="row-header">
-        <h1>New Questions</h1>
-        <div class="hot-questions "><a href="">Hot Questions</a></div>
+      {% if request.GET.mod == 'hot'%}
+            <h1>Hot Questions</h1>
+            <div class="hot-questions "><a href="{% url 'index' %}?mod=new">New Questions</a></div>
+      {% else %}
+            <h1>New Questions</h1>
+            <div class="hot-questions "><a href="{% url 'index' %}?mod=hot">Hot Questions</a></div>
+      {% endif %}
+
     </div>
 
     {% for question in questions %}

@@ -1,10 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'layouts/base.html' %}
+{% load static %}
+{% block content %}
 
-</body>
-</html>
+<h1>Settings: Dr. Pepper</h1>
+  <div class="mb-3 row">
+    <label  class="col-sm-2 col-form-label">Login</label>
+    <div class="col-sm-10">
+      <input  class="form-control" maxlength="20" placeholder="dr_pepper">
+    </div>
+  </div>
+ <div class="mb-3 row">
+    <label  class="col-sm-2 col-form-label">Email</label>
+    <div class="col-sm-10">
+      <input  class="form-control" maxlength="20" placeholder="drpepper@mail.ru">
+    </div>
+  </div>
+ <div class="mb-3 row">
+    <label  class="col-sm-2 col-form-label">NickName</label>
+    <div class="col-sm-10">
+      <input  class="form-control" maxlength="20" placeholder="Dr.Pepper">
+    </div>
+  </div>
+<div class="mb-3 row">
+    <label  class="col-sm-2 col-form-label">Upload avatar</label>
+    <div class="col-sm-10">
+       <img src="{% static '/img/cat.jpg' %}" class="settings-user-avatar-image">
+      <input class="form-control" type="file" id="formFile">
+    </div>
+  </div>
+  <div class="mb-3 row">
+    <label  class="col-sm-2 col-form-label"></label>
+    <div class="col-sm-10">
+      <div class="col-auto">
+    <button type="submit" class="btn btn-primary mb-3">Save</button>
+  </div>
+    </div>
+  </div>
+
+{% endblock %}

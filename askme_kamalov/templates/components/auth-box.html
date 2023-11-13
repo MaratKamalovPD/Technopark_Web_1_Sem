@@ -2,6 +2,6 @@
 <div class="user-bar-box">
                  <div>  <img src="{% static '/img/cat.jpg' %}" class="user-avatar-image"> </div>
                   <div>Dr. Pepper
-                      <div> <a href="{% url 'settings' %}" >settings</a>  <a href="" class="log-out">log out</a></div>
+                      <div> <a href="{% url 'settings' %}" >settings</a>  <a href="{% url 'index' %}?auth=no" class="">log out</a></div>
                  </div>
 </div>

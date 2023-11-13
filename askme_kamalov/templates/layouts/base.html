@@ -43,7 +43,11 @@
                 </form>
           </div>
           <div class="col-4">
+              {% if request.GET.auth == 'yes'%}
               {% include 'components/auth-box.html' %}
+              {% else %}
+              {% include 'components/login-box.html' %}
+              {% endif %}
           </div>
       </div>
     </div>

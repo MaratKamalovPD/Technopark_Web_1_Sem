@@ -132,7 +132,9 @@ font-size: 30px;
 
 .wrong-pass
 {
-   color: red;
+    padding-top: 15px;
+    color: red;
+    padding-bottom: 15px;
 }
 .register
 {
@@ -150,4 +152,20 @@ font-size: 30px;
 .question-title-text-underquestion
 {
     padding-left: 20px;
+}
+
+.like-display-field
+{
+    text-align: center!important;
+    box-sizing: border-box;
+
+}
+.rating-display{
+    padding-top: 20px;
+}
+.settings-user-avatar-image
+{
+    padding-bottom: 20px;
+    max-width: 150px;
+  max-height: 150px;
 }
