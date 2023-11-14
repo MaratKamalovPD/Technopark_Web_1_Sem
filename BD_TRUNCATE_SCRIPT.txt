@@ -1,0 +1,24 @@
+Truncate app_answer RESTART IDENTITY CASCADE;
+
+Truncate app_like RESTART IDENTITY CASCADE;
+
+Truncate app_answer_likes RESTART IDENTITY CASCADE;
+
+Truncate app_question RESTART IDENTITY CASCADE;
+
+
+Truncate app_question_likes RESTART IDENTITY CASCADE;
+
+
+Truncate app_question_tags RESTART IDENTITY CASCADE;
+
+
+Truncate app_tag RESTART IDENTITY CASCADE;
+
+
+Delete from app_user where app_user.id != 1;
+
+
+
+
+

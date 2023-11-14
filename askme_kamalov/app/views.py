@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.core.paginator import Paginator
 from . import models
 
-PER_PAGE = 5
+PER_PAGE = 10
 # QUESTIONS = [
 #         {
 #             'id': i,
@@ -12,12 +12,7 @@ PER_PAGE = 5
 #    ]
 
 QUESTIONS = models.Question.manager.get_queryset()
-ANSWERS = [
-        {
-            'id': i,
-            'text': f'Answer {i}'
-        } for i in range(15)
-    ]
+
 def paginate(objects, page, per_page=PER_PAGE):
     paginator = Paginator(objects, per_page)
     page_items = paginator.page(1).object_list
@@ -33,7 +28,7 @@ def index(request):
         questions = models.Question.manager.get_hot()
 
     pages = len(questions) // PER_PAGE
-    return render(request, template_name='index.html', context= { 'questions': paginate(questions, page= page, per_page= 5), 'pages': range(1, pages + 1), 'cur_page': str(page)})
+    return render(request, template_name='index.html', context= { 'questions': paginate(questions, page= page), 'pages': range(1, pages + 1), 'cur_page': str(page)})
 
 
 def question(request):
@@ -45,9 +40,10 @@ def question(request):
     question_id = int(request.GET.get('id'))
     question_item = QUESTIONS[question_id-1]
     page = request.GET.get('page', 1)
-    pages = len(ANSWERS) // PER_PAGE
-    print(QUESTIONS, QUESTIONS[1])
-    return render(request, template_name='question.html', context= { 'question': question_item , 'answers': paginate(ANSWERS, page= page, per_page= 5),'pages': range(1, pages + 1)})
+    question = models.Question.manager.get(id=question_id)
+    answers = question.answers.all()
+    pages = len(answers) // PER_PAGE
+    return render(request, template_name='question.html', context= { 'question': question_item , 'answers': paginate(answers, page= page),'pages': range(1, pages + 1)})
 
 
 def registration(request):
@@ -66,7 +62,9 @@ def settings(request):
     return render(request, template_name='settings.html')
 
 def tag(request, tag):
+    page = request.GET.get('page', 1)
     tag_instance = models.Tag.manager.get(name=tag)
     questions = tag_instance.questions.order_by('-likes_count', '-create_data', 'title')
+    pages = len(questions) // PER_PAGE
 
-    return render(request, template_name='tag.html', context= {'tag': tag_instance, 'questions': questions})
+    return render(request, template_name='tag.html', context= {'tag': tag_instance, 'questions': paginate(questions, page= page), 'pages': range(1, pages + 1), 'cur_page': str(page)})

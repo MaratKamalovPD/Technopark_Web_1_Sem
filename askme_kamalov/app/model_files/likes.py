@@ -21,4 +21,6 @@ class Like(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name='likes', default=None)
     type = models.CharField(choices=like_choices, max_length=1)
 
+
+
     manager = LikesManager()

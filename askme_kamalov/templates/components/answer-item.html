@@ -6,7 +6,7 @@
                    <div class="col-7">
                        <div class="rating-display">
 
-                          <span class="input-group-text" id="basic-addon1"> <b class="like-display-field">0</b></span>
+                          <span class="input-group-text" id="basic-addon1"> <b class="like-display-field">{{ answer.likes_count }}</b></span>
 
                        </div>
                    </div>
@@ -30,7 +30,7 @@
 
           <div class="col-10" style="padding-left: 25px">
               <div class="question-title-text-underquestion">
-                    <div class="question-text">{{ answer.text }}</div>
+                    <div class="question-text">{{ answer.content }}</div>
                         <div class="form-check under-answer">
                             <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                                 <label class="form-check-label" for="flexCheckIndeterminate">

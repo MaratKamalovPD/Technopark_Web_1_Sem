@@ -17,19 +17,6 @@ class QuestionManager(models.Manager):
     def get_by_tag(self, tag_name):
         return Tag.manager.get(name=tag_name).questions.all()
 
-    def like_it(self, instance, user):
-        try:
-            like = instance.likes.get(owner=user)
-            instance.likes.remove(like)
-            instance.likes_count -= 1
-            instance.save()
-            return False
-        except BaseException:
-            like = Like.manager.create(owner=user, type='q')
-            instance.likes.add(like)
-            instance.likes_count += 1
-            instance.save()
-            return True
 
 class Question(models.Model):
     owner = models.ForeignKey(User, related_name='questions', on_delete=models.CASCADE)

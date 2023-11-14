@@ -15,3 +15,5 @@ class Answer(models.Model):
     checked = models.BooleanField(default=False)
     likes = models.ManyToManyField(Like)
     likes_count = models.IntegerField(default=0)
+
+    manager = AnswersManager()
