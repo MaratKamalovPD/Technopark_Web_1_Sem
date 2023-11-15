@@ -51,9 +51,9 @@ class Command(BaseCommand):
         print()
 
         answers = []
-        bar = IncrementalBar('Answers created', max=len(questions) * 10)
+        bar = IncrementalBar('Answers created', max=len(questions) * 100)
         for question in questions:
-            for j in range(10):
+            for j in range(100):
                 owner = users.exclude(id=question.owner.id).order_by('?').first()
                 ans_content = f'answer content{bar.index}'
                 answer = Answer(user_creator=owner, question=question, content=ans_content)
@@ -74,13 +74,13 @@ class Command(BaseCommand):
         bar.finish()
         print()
 
-        bar = IncrementalBar('Likes added', max=len(answers))
+        bar = IncrementalBar('Likes added', max=len(answers) * 200)
         for answer in answers:
             _users = users.order_by('?')[:10]
             likes = [Like(owner=owner, type='a') for owner in _users]
             likes = Like.manager.bulk_create(likes)
             answer.likes.set(likes)
-            answer.likes_count = 10
+            answer.likes_count = randint(1, 100)
             bar.next()
         bar.finish()
         Answer.manager.bulk_update(answers, ['likes_count'])

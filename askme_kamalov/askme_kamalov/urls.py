@@ -30,3 +30,4 @@ urlpatterns = [
     path('tag/<str:tag>', views.tag, name="tag"),
 
 ]
+

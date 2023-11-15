@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.core.paginator import Paginator
+from django.http import HttpResponse, HttpResponseNotFound, Http404
 from . import models
 
 PER_PAGE = 10
@@ -38,9 +39,14 @@ def question(request):
 
 
     question_id = int(request.GET.get('id'))
+    try:
+        question = models.Question.manager.get(id=question_id)
+    except models.Question.DoesNotExist:
+        raise Http404("Question not found")
+
     question_item = QUESTIONS[question_id-1]
     page = request.GET.get('page', 1)
-    question = models.Question.manager.get(id=question_id)
+
     answers = question.answers.all()
     pages = len(answers) // PER_PAGE
     return render(request, template_name='question.html', context= { 'question': question_item , 'answers': paginate(answers, page= page),'pages': range(1, pages + 1)})
@@ -67,4 +73,4 @@ def tag(request, tag):
     questions = tag_instance.questions.order_by('-likes_count', '-create_data', 'title')
     pages = len(questions) // PER_PAGE
 
-    return render(request, template_name='tag.html', context= {'tag': tag_instance, 'questions': paginate(questions, page= page), 'pages': range(1, pages + 1), 'cur_page': str(page)})
+    return render(request, template_name='tag.html', context= {'tag': tag_instance, 'questions': questions})

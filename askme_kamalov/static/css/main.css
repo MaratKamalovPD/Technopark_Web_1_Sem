@@ -32,7 +32,7 @@ main > .container
 }
 
 .question-text{
-
+ height: 100px;
 }
 .question-title{
   font-size: 40px;
