@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="412162e3-6b90-452d-aac3-3f879566eddd" name="Changes" comment="HW4 and HW5" />
+    <list default="true" id="412162e3-6b90-452d-aac3-3f879566eddd" name="Changes" comment="HW4 and HW5 2nd comint" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -136,7 +136,7 @@
       <workItem from="1701710758441" duration="617000" />
       <workItem from="1702289528359" duration="603000" />
       <workItem from="1703522810314" duration="1541000" />
-      <workItem from="1703580865174" duration="47831000" />
+      <workItem from="1703580865174" duration="48275000" />
     </task>
     <task id="LOCAL-00001" summary="Changes after 2nd seminar">
       <created>1699616162613</created>
@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703699546633</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="HW4 and HW5 2nd comint">
+      <created>1703700145087</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703700145087</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +195,8 @@
     <MESSAGE value="Some improvements" />
     <MESSAGE value="Updated requirements.txt" />
     <MESSAGE value="HW4 and HW5" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW4 and HW5" />
+    <MESSAGE value="HW4 and HW5 2nd comint" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW4 and HW5 2nd comint" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Technopark_Web_1_Sem$manage.coverage" NAME="manage Coverage Results" MODIFIED="1699478574094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/askme_kamalov" />
