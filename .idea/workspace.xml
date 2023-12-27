@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="412162e3-6b90-452d-aac3-3f879566eddd" name="Changes" comment="HW4 and HW5" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager">
+    <option name="groupingKeys">
+      <option value="directory" />
+    </option>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2XcZRaOaSiWP2QISBmsWTHBtxll" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Pes_Tick/Documents/GitHub/Technopark_Web_1_Sem/venv&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pes_Tick\Documents\GitHub\Technopark_Web_1_Sem\askme_kamalov" />
+      <recent name="C:\Users\Pes_Tick\Documents\GitHub\Technopark_Web_1_Sem\templates\layouts" />
+      <recent name="C:\Users\Pes_Tick\Documents\GitHub\Technopark_Web_1_Sem" />
+      <recent name="C:\Users\Pes_Tick\Documents\GitHub\Technopark_Web_1_Sem\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.manage (1)">
+    <configuration name="manage (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Technopark_Web_1_Sem" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/askme_kamalov" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/askme_kamalov/manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="manage" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Technopark_Web_1_Sem" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/askme_kamalov" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Pes_Tick\Documents\GitHub\Technopark_Web_1_Sem\askme_kamalov\manage.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.manage (1)" />
+        <item itemvalue="Python.manage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="412162e3-6b90-452d-aac3-3f879566eddd" name="Changes" comment="" />
+      <created>1698930320594</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698930320594</updated>
+      <workItem from="1698930322832" duration="11821000" />
+      <workItem from="1699120605548" duration="18907000" />
+      <workItem from="1699297826868" duration="6525000" />
+      <workItem from="1699458891537" duration="7718000" />
+      <workItem from="1699472952635" duration="1018000" />
+      <workItem from="1699474002146" duration="3364000" />
+      <workItem from="1699477488081" duration="736000" />
+      <workItem from="1699478474933" duration="5543000" />
+      <workItem from="1699605991330" duration="13168000" />
+      <workItem from="1699715600663" duration="3185000" />
+      <workItem from="1699718823818" duration="15431000" />
+      <workItem from="1699994881765" duration="1049000" />
+      <workItem from="1700039074031" duration="4547000" />
+      <workItem from="1700060863820" duration="11666000" />
+      <workItem from="1700416326686" duration="231000" />
+      <workItem from="1700505459194" duration="604000" />
+      <workItem from="1701101933798" duration="601000" />
+      <workItem from="1701457500672" duration="325000" />
+      <workItem from="1701460085230" duration="468000" />
+      <workItem from="1701710758441" duration="617000" />
+      <workItem from="1702289528359" duration="603000" />
+      <workItem from="1703522810314" duration="1541000" />
+      <workItem from="1703580865174" duration="47831000" />
+    </task>
+    <task id="LOCAL-00001" summary="Changes after 2nd seminar">
+      <created>1699616162613</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1699616162613</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Some improvements">
+      <created>1700043638967</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700043638967</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Updated requirements.txt">
+      <created>1701457593602</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701457593602</updated>
+    </task>
+    <task id="LOCAL-00004" summary="HW4 and HW5">
+      <created>1703699546633</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703699546633</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes after 2nd seminar" />
+    <MESSAGE value="Some improvements" />
+    <MESSAGE value="Updated requirements.txt" />
+    <MESSAGE value="HW4 and HW5" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW4 and HW5" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Technopark_Web_1_Sem$manage.coverage" NAME="manage Coverage Results" MODIFIED="1699478574094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/askme_kamalov" />
+    <SUITE FILE_PATH="coverage/Technopark_Web_1_Sem$fill_db.coverage" NAME="fill_db Coverage Results" MODIFIED="1699910707108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/askme_kamalov/app" />
+    <SUITE FILE_PATH="coverage/Technopark_Web_1_Sem$manage__1_.coverage" NAME="manage (1) Coverage Results" MODIFIED="1703522819104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/askme_kamalov" />
+    <SUITE FILE_PATH="coverage/Technopark_Web_1_Sem$fill_db__1_.coverage" NAME="fill_db (1) Coverage Results" MODIFIED="1699989532320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/askme_kamalov/app/management/commands" />
+  </component>
+</project>
