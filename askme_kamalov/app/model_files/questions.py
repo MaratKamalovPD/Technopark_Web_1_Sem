@@ -8,6 +8,9 @@ class QuestionManager(models.Manager):
     def get_queryset(self):
         return super().get_queryset().filter()
 
+    def get_count(self):
+        return super().get_queryset().count()
+
     def get_new(self):
         return super().get_queryset().order_by('-create_data')
 
@@ -15,7 +18,7 @@ class QuestionManager(models.Manager):
         return super().get_queryset().order_by('-likes_count')
 
     def get_by_tag(self, tag_name):
-        return Tag.manager.get(name=tag_name).questions.all()
+        return Tag.manager.get(id, name=tag_name).questions.all()
 
 
 class Question(models.Model):

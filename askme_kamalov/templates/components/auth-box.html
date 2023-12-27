@@ -1,7 +1,7 @@
 {% load static %}
 <div class="user-bar-box">
-                 <div>  <img src="{% static '/img/cat.jpg' %}" class="user-avatar-image"> </div>
-                  <div>Dr. Pepper
-                      <div> <a href="{% url 'settings' %}" >settings</a>  <a href="{% url 'index' %}?auth=no" class="">log out</a></div>
+                 <div>  <img src="{{ request.user.avatar.url }}" class="user-avatar-image"> </div>
+                  <div> {{user.username}}
+                      <div> <a href="{% url 'settings' %}" >settings</a>  <a href="{% url 'logout' %}" class="">log out</a></div>
                  </div>
 </div>

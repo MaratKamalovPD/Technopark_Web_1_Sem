@@ -36,7 +36,7 @@
 
                     <div class="row underquestion">
                          <div class="col-5">
-                            <div class="answer"><a href="">answer (3)</a></div>
+                            <div class="answer"><a href="{% url 'question' %}?id={{question.id}}">answers ({{ question.answers.count }})</a></div>
                         </div>
                         <div class="col-7">
                             <div class="tags-two-points">Tags:
